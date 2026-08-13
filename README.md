@@ -34,9 +34,9 @@ uv run nes_fix.py --fixdat <fixdat.dat> --input <headered_dir> --output <out_dir
 
 ```powershell
 uv run nes_fix.py `
-  --fixdat "C:\DATS\fixDat_Nintendo.dat" `
-  --input "F:\(ROM Rebuilding)\Nintendo\NES-headered)" `
-  --output "F:\(ROM Rebuilding)\Nintendo\NES-headerless"
+  --fixdat "C:\DATS\fixDat_NES-headerless.dat" `
+  --input "C:\ROMs\Nintendo\NES-headered" `
+  --output "C:\ROMs\Nintendo\NES-headerless"
 ```
 
 After running, copy the output files into your headerless set (or point RomVault at the output folder) and run **Fix**.
@@ -47,7 +47,7 @@ After running, copy the output files into your headerless set (or point RomVault
 2. Recursively scan `--input` for `.nes`, `.unh`, `.zip`, and `.7z` files.
 3. For each candidate, remove the iNES header when the file starts with `NES\x1a` (16 bytes only; trainer data is kept).
 4. Verify CRC32, size, and SHA1/MD5 when present in the fixdat.
-5. Write matching files to `--output` using the exact rom name from the fixdat.
+5. Write matching files to `--output` using the exact ROM name from the fixdat.
 
 ## Exit codes
 
