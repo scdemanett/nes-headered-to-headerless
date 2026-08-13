@@ -34,9 +34,9 @@ uv run nes_fix.py --fixdat <fixdat.dat> --input <headered_dir> --output <out_dir
 
 ```powershell
 uv run nes_fix.py `
-  --fixdat "C:\Users\Steven\Desktop\fixDat_Nintendo_....dat" `
-  --input "F:\(ROM Rebuilding)\Nintendo\...\Nintendo Entertainment System (Headered) (Aftermarket) (No-Intro)" `
-  --output "F:\(ROM Rebuilding)\Nintendo\...\to-import-headerless"
+  --fixdat "C:\DATS\fixDat_Nintendo.dat" `
+  --input "F:\(ROM Rebuilding)\Nintendo\NES-headered)" `
+  --output "F:\(ROM Rebuilding)\Nintendo\NES-headerless"
 ```
 
 After running, copy the output files into your headerless set (or point RomVault at the output folder) and run **Fix**.
