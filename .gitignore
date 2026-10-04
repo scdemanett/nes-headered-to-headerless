@@ -5,3 +5,9 @@ venv/
 .env
 *.tmp
 uv.lock
+
+# Tauri app
+/node_modules
+/dist
+*.log
+*.tsbuildinfo

@@ -1,0 +1,31 @@
+{
+  "name": "nes-headerless-fixer",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Tauri desktop app that turns headered NES ROMs into the headerless .unh files a RomVault fixdat asks for.",
+  "author": "Steven Demanett",
+  "type": "module",
+  "scripts": {
+    "dev": "tauri dev",
+    "dev:renderer": "vite",
+    "build:renderer": "vite build",
+    "package": "tauri build",
+    "tauri": "tauri",
+    "test": "cargo test --manifest-path src-tauri/Cargo.toml",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.12.1",
+    "@tauri-apps/plugin-dialog": "^2.8.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.12.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.2"
+  }
+}
